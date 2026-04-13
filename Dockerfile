@@ -21,4 +21,4 @@ ENV PORT=3000
 
 EXPOSE 3000
 
-CMD ["deno", "run", "--allow-net", "--allow-env", "--allow-read", "--allow-write", "build/index.js"]
+CMD ["deno", "serve", "--allow-net", "--allow-env", "--allow-read", "--allow-write", "--port", "3000", "build/index.js"]
